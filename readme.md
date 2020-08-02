@@ -1,2 +1,3 @@
-# yeah so this is a thing
-fivem plugin
+# SakuraM
+
+SakuraM is the FiveM Plugin Component of the Sakura Computer Aided Dispatch System

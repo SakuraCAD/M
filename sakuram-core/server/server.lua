@@ -22,8 +22,8 @@ AddEventHandler("call911", function(player, calldata)
     local location = calldata.location
     local reason = calldata.reason
     local coords = calldata.coords
-    local testDiscordWebhook = "removed_for_security_reasons"
+    local url = ""
     local data = json.encode({content = "**Crime in Progress**\nAuthority Requested :" .. authority .. "\nStreet : " .. location .. "\nCoordinates (X, Y and Z) : `" .. coords.x .. " | "..coords.y .. "| " .. coords.z .. "`\nCaller Information : \n```\n" .. reason .. "\n```"})
-    PerformHttpRequest(testDiscordWebhook, returnDiscord(player), 'POST', data, {["Content-Type"] = "application/json"})
+    PerformHttpRequest(url, returnDiscord(player), 'POST', data, {["Content-Type"] = "application/json"})
 end)
 
