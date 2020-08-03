@@ -1,4 +1,5 @@
 const WebSocket = require('ws');
+
 const { v4: uuid } = require('uuid');
 
 const wsUrl = 'wss://api.sakuracad.app/';
