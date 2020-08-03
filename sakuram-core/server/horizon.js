@@ -21,7 +21,7 @@ socket.on('message', data => {
     const dataReceived = JSON.parse(data);
 
     if (dataReceived.r && cbMap.has(dataReceived.r)) {
-        cbMap.get(dataReceived.r)();
+        cbMap.get(dataReceived.r)(dataReceived);
         cbMap.delete(dataReceived.r);
     }
 });
