@@ -25,3 +25,5 @@ socket.on('message', data => {
         cbMap.delete(dataReceived.r);
     }
 });
+
+emit('sakuram:horizon:ready');
