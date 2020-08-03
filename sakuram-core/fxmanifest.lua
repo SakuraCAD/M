@@ -6,8 +6,6 @@ author 'SakuraCAD'
 description 'SakuraCAD Server Plugin for FiveM'
 version '1.0.0'
 
-dependency 'yarn'
-
 -- What to run
 client_script 'client/client.lua'
 
