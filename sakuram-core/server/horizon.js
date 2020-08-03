@@ -20,9 +20,15 @@ on('sakuram:horizon:send', (operation, data, callback) => {
 socket.on('message', data => {
     const dataReceived = JSON.parse(data);
 
-    if (dataReceived.r && cbMap.has(dataReceived.r)) {
-        cbMap.get(dataReceived.r)({ operation: dataReceived.o, data: dataReceived.d });
+    if (!dataReceived.r) return;
+
+    if (cbMap.has(dataReceived.r)) {
+        cbMap.get(dataReceived.r)(dataReceived.d);
         cbMap.delete(dataReceived.r);
+    } else {
+        emit('sakuram:horizon:receive', dataReceived.o, dataReceived.d, (operation, data) => {
+            socket.send({ r: dataReceived.r, o: operation, d: data });
+        });
     }
 });
 
