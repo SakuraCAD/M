@@ -26,4 +26,4 @@ socket.on('message', data => {
     }
 });
 
-emit('sakuram:horizon:ready');
+socket.on('open', () => emit('sakuram:horizon:ready'));
