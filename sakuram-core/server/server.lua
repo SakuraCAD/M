@@ -4,11 +4,12 @@ RegisterNetEvent("call911")
 RegisterNetEvent("911CallReturn")
 
 
-
+-- Return 911 Call
 function Return911()
     TriggerClientEvent("911CallReturn")
 end
--- callback 
+
+-- Callback
 
 function returnDiscord(player,errorCode, resultData, resultHeaders)
     Return911(player,errorCode)
@@ -17,7 +18,6 @@ end
 
 -- Handle Client 911 Calls
 AddEventHandler("call911", function(player, calldata)
-    print('Got Event')
     local authority = calldata.authority
     local location = calldata.location
     local reason = calldata.reason
