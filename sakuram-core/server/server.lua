@@ -1,3 +1,20 @@
+--[[________      ______                      _______________________ 
+__  ___/_____ ___  /_____  ______________ __  ____/__    |__  __ \
+_____ \_  __ `/_  //_/  / / /_  ___/  __ `/  /    __  /| |_  / / /
+____/ // /_/ /_  ,<  / /_/ /_  /   / /_/ // /___  _  ___ |  /_/ / 
+/____/ \__,_/ /_/|_| \__,_/ /_/    \__,_/ \____/  /_/  |_/_____/  
+      
+    SakuraCAD Server for FiveM
+    Developed by Friz#8136 and LewisTehMinerz#1337
+    https://sakuracad.app
+    Made using Visual Studio Code - Insiders
+]]--
+
+-- Setup Convars and Events
+
+SetConvar("sakura_allowanalytics", true)
+SetConvar("sakura_licence", "no-licence")
+
 -- Error Handler
 
 function errorHandle(err)
