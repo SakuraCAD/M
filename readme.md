@@ -10,4 +10,4 @@ All of our documentation is stored on Gitbooks. Find out more here
 
 # Open Source Credits
 
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=Sheamle&repo=notif&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=Sheamle&repo=notif&theme=dark)](https://github.com/Sheamle/notif)
